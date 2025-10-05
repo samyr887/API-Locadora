@@ -1,0 +1,46 @@
+## Visual Studio e .NET
+.vs/
+bin/
+obj/
+TestResults/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Logs e temporários
+*.log
+*.tlog
+*.cache
+*.tmp
+*.bak
+*.vsidx
+
+## Build e publish locais
+*.PublishProfiles/
+*.pubxml
+*.publish.xml
+project.lock.json
+artifacts/
+
+## Dependências e pacotes
+packages/
+node_modules/
+wwwroot/lib/
+
+## Configurações locais
+appsettings.Development.json
+appsettings.Local.json
+.env
+
+## Sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Backup
+*.bak
+*.old
+*.orig
+*.swp
