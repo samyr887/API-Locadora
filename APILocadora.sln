@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APILocadora", "APILocadora\APILocadora.csproj", "{187DD2FF-DBD2-4147-832F-51B922628A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APILocadora.Test", "APILocadora.Test\APILocadora.Test.csproj", "{1C9C2406-0CA3-4AD6-A19B-30195332D91A}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontlocadora", "FRONTLocadora\frontlocadora.esproj", "{8917D366-B084-FED0-FE54-E77560F7FF7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,16 @@ Global
 		{187DD2FF-DBD2-4147-832F-51B922628A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{187DD2FF-DBD2-4147-832F-51B922628A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{187DD2FF-DBD2-4147-832F-51B922628A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9C2406-0CA3-4AD6-A19B-30195332D91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9C2406-0CA3-4AD6-A19B-30195332D91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9C2406-0CA3-4AD6-A19B-30195332D91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9C2406-0CA3-4AD6-A19B-30195332D91A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8917D366-B084-FED0-FE54-E77560F7FF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8917D366-B084-FED0-FE54-E77560F7FF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8917D366-B084-FED0-FE54-E77560F7FF7A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8917D366-B084-FED0-FE54-E77560F7FF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8917D366-B084-FED0-FE54-E77560F7FF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8917D366-B084-FED0-FE54-E77560F7FF7A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

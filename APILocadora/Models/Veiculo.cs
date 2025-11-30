@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string? Modelo { get; set; }
-        public DateOnly Ano { get; set; }
+        public string Ano { get; set; }
         public string? Quilometragem { get; set; }
 
 
