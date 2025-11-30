@@ -72,10 +72,14 @@ export default function VeiculosPage() {
                                 value={fFabricante}
                                 onChange={e => setFFabricante(e.target.value)} />
                         </div>
-                        <div className="col-md-2">
-                            <button className="btn btn-secondary w-100" onClick={() => {
+                        <div className="col-md-2 d-flex gap-2">
+                            <button className="btn btn-secondary" onClick={() => {
                                 setFModelo(""); setFAno(""); setFFabricante("");
                             }}>Limpar</button>
+
+                            <button className="btn btn-outline-secondary" onClick={load}>
+                                Atualizar
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -18,9 +18,25 @@ namespace APILocadora.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CategoriaVeiculo>>> GetCategorias()
+        public async Task<IActionResult> GetCategorias()
         {
-            return await _context.CategoriasVeiculos.ToListAsync();
+            var categorias = await _context.CategoriasVeiculos
+                .Include(c => c.Veiculos)
+                .Select(c => new CategoriaReadDTO
+                {
+                    Id = c.Id,
+                    Nome = c.Nome,
+                    Descricao = c.Descricao,
+                    Veiculos = c.Veiculos.Select(v => new VeiculoSimpleDTO
+                    {
+                        Id = v.Id,
+                        Modelo = v.Modelo,
+                        Ano = v.Ano
+                    }).ToList()
+                })
+                .ToListAsync();
+
+            return Ok(categorias);
         }
 
         [HttpGet("{id}")]

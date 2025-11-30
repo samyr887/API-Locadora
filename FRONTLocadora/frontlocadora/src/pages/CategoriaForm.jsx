@@ -52,35 +52,36 @@ export default function CategoriaForm() {
     }
 
     return (
-        <form className="card p-3" onSubmit={save}>
+        <div>
             <h4>{id ? "Editar Categoria" : "Nova Categoria"}</h4>
+            {loading ? <div>Carregando...</div> : (
 
-            <div className="mb-3">
-                <label className="form-label">Nome</label>
-                <input
-                    className="form-control"
-                    value={form.nome}
-                    onChange={e => updateField("nome", e.target.value)}
-                    required
-                />
-            </div>
+            <form onSubmit={save}>
 
-            <div className="mb-3">
-                <label className="form-label">Descricao</label>
-                <textarea
-                    className="form-control"
-                    rows="3"
-                    value={form.descricao}
-                    onChange={e => updateField("descricao", e.target.value)}
-                />
-            </div>
+                <div className="mb-3">
+                    <label className="form-label">Nome</label>
+                    <input
+                        className="form-control"
+                        value={form.nome}
+                        onChange={e => updateField("nome", e.target.value)}
+                        required
+                    />
+                </div>
 
-            <button className="btn btn-success">Salvar</button>
-            <button type="button" className="btn btn-secondary ms-2"
-                onClick={() => navigate("/categorias")}
-            >
-                Cancelar
-            </button>
-        </form>
+                <div className="mb-3">
+                    <label className="form-label">Descricao</label>
+                    <textarea
+                        className="form-control"
+                        rows="3"
+                        value={form.descricao}
+                        onChange={e => updateField("descricao", e.target.value)}
+                    />
+                </div>
+
+                <button className="btn btn-primary me-2" type="submit">Salvar</button>
+                <button type="button" className="btn btn-secondary" onClick={() => navigate("/categorias")}>Cancelar</button>
+                </form>
+            )}
+        </div>
     );
 }

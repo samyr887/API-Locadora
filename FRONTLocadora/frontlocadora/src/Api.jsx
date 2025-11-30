@@ -46,3 +46,12 @@ export const VeiculosAPI = {
     update: (id, veiculo) => request(`/api/Veiculos/${id}`, { method: "PUT", body: JSON.stringify(veiculo), }),
     remove: (id) => request(`/api/Veiculos/${id}`, { method: "DELETE", }),
 };
+
+export const AlugueisAPI = {
+    list: () => request("/api/Alugueis"),
+    get: (id) => request(`/api/Alugueis/${id}`),
+    start: (aluguel) => request("/api/Alugueis/iniciar", { method: "POST", body: JSON.stringify(aluguel) }),
+    finish: (id, dados) => request(`/api/Alugueis/finalizar/${id}`, { method: "PUT", body: JSON.stringify(dados) }),
+    update: (id, aluguel) => request(`/api/Alugueis/${id}`, { method: "PUT", body: JSON.stringify(aluguel) }),
+    remove: (id) => request(`/api/Alugueis/${id}`, { method: "DELETE" }),
+};

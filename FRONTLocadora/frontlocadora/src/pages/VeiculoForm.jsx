@@ -114,7 +114,8 @@ export default function VeiculoForm() {
                         </select>
                     </div>
 
-                    <button className="btn btn-primary mt-3">Salvar</button>
+                    <button className="btn btn-primary me-3">Salvar</button>
+                    <button type="button" className="btn btn-secondary" onClick={() => navigate("/Veiculos")}>Cancelar</button>
                 </form>
             </div>
         </div>

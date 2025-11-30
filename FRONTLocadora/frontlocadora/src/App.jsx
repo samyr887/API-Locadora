@@ -8,6 +8,9 @@ import CategoriasPage from "./pages/CategoriasPage";
 import CategoriaForm from "./pages/CategoriaForm";
 import VeiculosPage from "./pages/VeiculosPage";
 import VeiculoForm from "./pages/VeiculoForm";
+import AlugueisPage from "./pages/AlugueisPage";
+import AluguelForm from "./pages/AluguelForm";
+import AluguelFinalizar from "./pages/AluguelFinalizar";
 
 function App() {
     return (
@@ -21,6 +24,7 @@ function App() {
                             <li className="nav-item"><Link className="nav-link" to="/fabricantes">Fabricantes</Link></li>
                             <li className="nav-item"><Link className="nav-link" to="/categorias">Categorias</Link></li>
                             <li className="nav-item"><Link className="nav-link" to="/veiculos">Veiculos</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/alugueis">Alugueis</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -41,6 +45,10 @@ function App() {
                     <Route path="/veiculos" element={<VeiculosPage />} />
                     <Route path="/veiculos/novo" element={<VeiculoForm />} />
                     <Route path="/veiculos/editar/:id" element={<VeiculoForm />} />
+                    <Route path="/alugueis" element={<AlugueisPage />} />
+                    <Route path="/alugueis/novo" element={<AluguelForm />} />
+                    <Route path="/alugueis/editar/:id" element={<AluguelForm />} />
+                    <Route path="/alugueis/finalizar/:id" element={<AluguelFinalizar />} />
                 </Routes>
             </div>
         </BrowserRouter>

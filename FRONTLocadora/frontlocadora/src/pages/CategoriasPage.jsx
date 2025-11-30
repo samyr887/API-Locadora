@@ -66,12 +66,16 @@ export default function CategoriasPage() {
                             />
                         </div>
 
-                        <div className="col-md-2">
+                        <div className="col-md-2 d-flex gap-2">
                             <button
                                 className="btn btn-secondary"
                                 onClick={() => setFNome("")}
                             >
                                 Limpar
+                            </button>
+
+                            <button className="btn btn-outline-secondary" onClick={load}>
+                                Atualizar
                             </button>
                         </div>
                     </div>
