@@ -124,7 +124,7 @@ export default function FabricantesPage() {
                                         <div className="small text-dark">
                                             {f.veiculos.map(v => (
                                                 <div key={v.id}>
-                                                    > {v.modelo ?? v.Modelo} - {v.ano ?? v.Ano}
+                                                    - {v.modelo ?? v.Modelo} - {v.ano ?? v.Ano}
                                                 </div>
                                             ))}
                                         </div>
